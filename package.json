@@ -1,12 +1,19 @@
 {
   "name": "eng-letters-to-geo",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "description": "translates Georgian text writen with English letters into Georgian ",
-  "main": "index.js",
-  "types": "index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc index.ts"
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -26,6 +33,21 @@
   },
   "homepage": "https://github.com/Gujejiani/EngAlphabetToGeo#readme",
   "devDependencies": {
-    "@types/node": "^17.0.21"
+    "@types/jest": "^27.4.1",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^17.0.21",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.5"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@jest/types": "^27.5.1",
+    "@types/webrtc": "0.0.31"
   }
 }
