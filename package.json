@@ -1,6 +1,6 @@
 {
   "name": "eng-letters-to-geo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "translates Georgian text writen with English letters into Georgian ",
   "main": "index.js",
   "types": "index.ts",
