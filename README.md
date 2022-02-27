@@ -1,10 +1,10 @@
 # npm package EngAlphabetToGeo
 
-#description 
+# description 
 translates English Letters to Georgian
 
 
-#installing 
+# installing 
 
 npm install eng-letters-to-geo
 
