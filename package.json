@@ -1,0 +1,31 @@
+{
+  "name": "eng-letters-to-geo",
+  "version": "1.0.1",
+  "description": "translates Georgian text writen with English letters into Georgian ",
+  "main": "index.js",
+  "types": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gujejiani/EngAlphabetToGeo.git"
+  },
+  "keywords": [
+    "translate",
+    "english",
+    "georgian",
+    "georgia",
+    "english-to-georgian"
+  ],
+  "author": "Kakha Gujejiani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gujejiani/EngAlphabetToGeo/issues"
+  },
+  "homepage": "https://github.com/Gujejiani/EngAlphabetToGeo#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}
