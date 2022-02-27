@@ -1,4 +1,4 @@
-const engAlphabetToGeo = (word: string): string => {
+export const engAlphabetToGeo = (word: string): string => {
   if (!word) return '';
 
   let georgian: string = '';
@@ -59,4 +59,4 @@ const mappedLetters = () => {
   return letters;
 };
 
-module.exports = engAlphabetToGeo;
+

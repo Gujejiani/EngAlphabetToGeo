@@ -12,13 +12,13 @@ exclude: We don’t want to transpile node_modules, neither tests since these ar
 
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015",
     "module": "commonjs",
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
-    "types": []
+    //"types": ["jest", "node"]
   },
   "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "exclude": ["node_modules"]
 }

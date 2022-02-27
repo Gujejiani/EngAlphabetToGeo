@@ -1,6 +1,6 @@
 {
   "name": "eng-letters-to-geo",
-  "version": "1.0.8",
+  "version": "1.0.11",
   "description": "translates Georgian text writen with English letters into Georgian ",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,11 +9,11 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
