@@ -14,7 +14,7 @@ npm install eng-letters-to-geo
 # example
 
 
-const engWordToGeo = require('eng-letters-to-geo')
+import {engAlphabetToGeo} from ('eng-letters-to-geo')
 
 
-const GeorgianWord = engWordToGeo('mgeli') // მგელი
+const GeorgianWord = engAlphabetToGeo('tavisufleba') // თავისუფლება
